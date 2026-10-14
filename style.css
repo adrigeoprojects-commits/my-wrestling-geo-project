@@ -181,6 +181,23 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .resource-links a { color: var(--ink); font-size: .8rem; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .25rem; }
 .resource-links a span { color: var(--accent); }
 
+.glossary-section { padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: clamp(4.5rem, 9vw, 8rem); }
+.term-list { margin: 0; }
+.term-entry {
+  display: grid;
+  grid-template-columns: minmax(10rem, .42fr) minmax(0, 1.58fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  padding: 2rem 0 2.25rem;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 2rem;
+}
+.term-entry:first-child { border-top: 1px solid var(--line); }
+.term-entry dt { color: var(--ink); font-size: clamp(1.45rem, 2.5vw, 2rem); font-weight: 700; line-height: 1.2; letter-spacing: -.05em; }
+.term-entry dd { max-width: 54rem; margin: 0; color: #4f534c; font-size: .96rem; }
+.term-entry dd strong { color: var(--ink); }
+.term-entry dd a { color: var(--ink); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .22rem; }
+.term-entry dd a:hover { color: var(--accent); }
+
 .faq-section { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .faq-shell { display: grid; grid-template-columns: minmax(14rem, .65fr) minmax(0, 1.35fr); gap: clamp(3rem, 9vw, 9rem); padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: clamp(4rem, 8vw, 7rem); }
 .faq-heading { position: sticky; top: 2rem; align-self: start; }
@@ -229,6 +246,7 @@ table a:hover { color: var(--accent); }
   .entry-link, .entry-tag { grid-column: 2; justify-self: start; }
   .entry-link, .entry-tag { grid-row: 2; }
   .faq-shell { grid-template-columns: 1fr; gap: 2.5rem; }
+  .term-entry { grid-template-columns: 1fr; gap: .65rem; }
   .faq-heading { position: static; }
   .faq-heading h2 { max-width: 14ch; }
 }
