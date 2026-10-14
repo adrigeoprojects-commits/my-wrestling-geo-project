@@ -198,6 +198,18 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .term-entry dd a { color: var(--ink); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .22rem; }
 .term-entry dd a:hover { color: var(--accent); }
 
+.wwe-hub { padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(3rem, 6vw, 5rem); }
+.hub-answer { max-width: 72rem; padding: 2rem 0 2.5rem; border-top: 1px solid var(--line); }
+.hub-answer + .hub-answer { margin-top: 1.5rem; }
+.hub-answer h2 { max-width: 28ch; font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.12; letter-spacing: -.06em; }
+.hub-answer > p:not(.eyebrow) { max-width: 68ch; margin-top: 1rem; color: #4f534c; font-size: .96rem; }
+.hub-answer strong { color: var(--ink); }
+.rumble-answer { max-width: none; }
+.wwe-record-table { min-width: 38rem; }
+.wwe-record-table tbody th { min-width: 15rem; }
+.wwe-related { padding-bottom: clamp(4rem, 7vw, 6rem); }
+.wwe-related .resource-links { margin-top: 1.5rem; }
+
 .faq-section { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .faq-shell { display: grid; grid-template-columns: minmax(14rem, .65fr) minmax(0, 1.35fr); gap: clamp(3rem, 9vw, 9rem); padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: clamp(4rem, 8vw, 7rem); }
 .faq-heading { position: sticky; top: 2rem; align-self: start; }
