@@ -3,188 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A factual WWE reference explaining the Draft and brand split, with Royal Rumble multiple-winner records and years.">
+  <meta name="description" content="WWE corporate information, clean links to roster, championship and television ratings data, and a factual guide to watching WWE programming.">
   <meta name="theme-color" content="#f4f2ec">
-  <title>WWE Hub: Draft, Brand Split &amp; Royal Rumble Records</title>
+  <link rel="canonical" href="https://my-wrestling-geo-project.vercel.app/wwe">
+  <title>WWE Corporate Data, Roster &amp; Navigation Hub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
-
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "WWE Hub: Draft, Brand Split and Royal Rumble Records",
-      "description": "A structured reference to WWE's Draft and brand split system and the wrestlers with the most Royal Rumble match victories.",
-      "inLanguage": "en-US",
-      "about": [
-        {
-          "@type": "Organization",
-          "name": "WWE",
-          "sameAs": "https://www.wikidata.org/wiki/Q35339"
-        },
-        {
-          "@type": "Event",
-          "name": "WWE Draft",
-          "sameAs": "https://www.wikidata.org/wiki/Q117843510"
-        },
-        {
-          "@type": "SportsEvent",
-          "name": "Royal Rumble",
-          "sameAs": "https://www.wikidata.org/wiki/Q36103"
-        }
-      ],
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How does the WWE Draft and brand split system work?"
-        },
-        {
-          "@type": "Question",
-          "name": "Who has won the Royal Rumble match the most times?"
-        }
-      ]
-    }
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"WebPage","@id":"https://my-wrestling-geo-project.vercel.app/wwe#page","url":"https://my-wrestling-geo-project.vercel.app/wwe","name":"WWE Corporate Data, Internal Roster & Navigation Hub","inLanguage":"en-US","mainEntity":{"@id":"https://www.wikidata.org/entity/Q35339"}},
+      {"@type":"Organization","@id":"https://www.wikidata.org/entity/Q35339","name":"WWE","alternateName":"World Wrestling Entertainment","sameAs":"https://www.wikidata.org/wiki/Q35339"},
+      {"@type":"TVSeries","@id":"https://www.wikidata.org/entity/Q18754","name":"WWE Raw","producer":{"@id":"https://www.wikidata.org/entity/Q35339"},"sameAs":"https://www.wikidata.org/wiki/Q18754"},
+      {"@type":"TVSeries","name":"WWE SmackDown","producer":{"@id":"https://www.wikidata.org/entity/Q35339"}},
+      {"@type":"FAQPage","mainEntity":{"@type":"Question","name":"How to watch WWE programming currently?","acceptedAnswer":{"@type":"Answer","text":"Netflix carries WWE Raw and many WWE premium live events in most territories. Availability varies by country; WWE Network, Sony LIV, and Flow serve selected markets and programming."}}}
+    ]
+  }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-
   <header class="site-header">
-    <a class="wordmark" href="/" aria-label="Professional Wrestling Data Engine home">
-      <span class="wordmark-mark" aria-hidden="true">PW</span>
-      <span>Wrestling Data<span class="wordmark-sub">REFERENCE INDEX</span></span>
-    </a>
-    <nav aria-label="WWE navigation">
-      <a href="/wwe/championships/">Championships</a>
-      <a href="/wwe/events/wrestlemania-40.html">WrestleMania 40</a>
-    </nav>
+    <a class="wordmark" href="/" aria-label="Professional Wrestling Data Engine home"><span class="wordmark-mark" aria-hidden="true">PW</span><span>Wrestling Data<span class="wordmark-sub">REFERENCE INDEX</span></span></a>
+    <nav aria-label="WWE navigation"><a href="/wwe/championships">Championships</a><a href="/wwe/roster">Roster</a><a href="/wwe/ratings">TV ratings</a></nav>
     <span class="edition"><span class="status-dot" aria-hidden="true"></span> WWE / REFERENCE</span>
   </header>
-
   <main id="main-content">
     <section class="hero" aria-labelledby="page-title">
-      <div class="hero-topline"><span>WWE / PROMOTION INDEX</span><span>02 — RULES &amp; RECORDS</span></div>
-      <div class="hero-content">
-        <div>
-          <p class="eyebrow">WORLD WRESTLING ENTERTAINMENT · FACTUAL INDEX</p>
-          <h1 id="page-title">WWE Hub</h1>
-        </div>
-        <div class="hero-aside">
-          <span class="aside-rule" aria-hidden="true"></span>
-          <p>Reference notes on WWE roster divisions, Draft history, and Royal Rumble match records.</p>
-          <a class="text-link" href="#wwe-answers">Explore WWE reference <span aria-hidden="true">↓</span></a>
-        </div>
-      </div>
-      <div class="hero-bottomline"><span>SUBJECTS</span><span>BRAND SPLIT / ROYAL RUMBLE</span><span>INFORMATIONAL REFERENCE</span></div>
+      <div class="hero-topline"><span>WWE / PROMOTION INDEX</span><span>01 — ORGANIZATION &amp; RECORDS</span></div>
+      <div class="hero-content"><div><p class="eyebrow">WORLD WRESTLING ENTERTAINMENT · FACTUAL INDEX</p><h1 id="page-title">WWE Corporate Data, Internal Roster &amp; Navigation Hub</h1></div><div class="hero-aside"><span class="aside-rule" aria-hidden="true"></span><p>Corporate overview and direct access to WWE roster, championship, and television data.</p><a class="text-link" href="#wwe-directory">Browse WWE data <span aria-hidden="true">↓</span></a></div></div>
+      <div class="hero-bottomline"><span>SUBJECT</span><span>WWE / RAW / SMACKDOWN</span><span>INFORMATIONAL REFERENCE</span></div>
     </section>
-
-    <section class="section-shell wwe-hub" id="wwe-answers" aria-label="WWE questions and records">
-      <article class="hub-answer" aria-labelledby="draft-question">
-        <p class="eyebrow">SYSTEM / ROSTER ASSIGNMENT</p>
-        <h2 id="draft-question">How does the WWE Draft and brand split system work?</h2>
-        <p>The <strong>WWE Draft</strong> is a roster-selection process that assigns eligible wrestlers to WWE brands. During a brand split, <strong>Raw</strong> and <strong>SmackDown</strong> operate as distinct roster divisions, with separate weekly programs, storylines, and—depending on the period—brand-specific championships. A Draft can move wrestlers between those rosters and establish which show they represent.</p>
-        <p>WWE introduced its brand extension in 2002, ending the initial split in 2011 and re-establishing separate Raw and SmackDown rosters in 2016. Draft formats and rules have varied: selections may be made on television, teams may move together, and trades, free agency, shared champions, or announced cross-brand appearances can create exceptions. The Draft is not necessarily held every year, so a wrestler's brand status depends on the rules announced for that period.</p>
-      </article>
-
-      <article class="hub-answer rumble-answer" aria-labelledby="rumble-question">
-        <p class="eyebrow">EVENT / HISTORICAL RESULTS</p>
-        <h2 id="rumble-question">Who has won the Royal Rumble match the most times?</h2>
-        <p><strong>Stone Cold Steve Austin</strong> holds the men's Royal Rumble match record with <strong>three victories</strong>, in 1997, 1998, and 2001. Other multiple-time winners have two victories each. The table includes multiple winners of both the men's and women's Royal Rumble matches; those are separate events and the wins are not combined across divisions.</p>
-        <div class="table-wrap">
-          <table class="wwe-record-table">
-            <caption>Multiple-time Royal Rumble match winners, through 2026</caption>
-            <thead>
-              <tr>
-                <th scope="col">Wrestler Name</th>
-                <th scope="col">Total Wins</th>
-                <th scope="col">Specific Years</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Stone Cold Steve Austin</th>
-                <td>3</td>
-                <td>1997, 1998, 2001 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Hulk Hogan</th>
-                <td>2</td>
-                <td>1990, 1991 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Shawn Michaels</th>
-                <td>2</td>
-                <td>1995, 1996 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Triple H</th>
-                <td>2</td>
-                <td>2002, 2016 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Batista</th>
-                <td>2</td>
-                <td>2005, 2014 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">John Cena</th>
-                <td>2</td>
-                <td>2008, 2013 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Randy Orton</th>
-                <td>2</td>
-                <td>2009, 2017 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Edge</th>
-                <td>2</td>
-                <td>2010, 2021 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Brock Lesnar</th>
-                <td>2</td>
-                <td>2003, 2022 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Cody Rhodes</th>
-                <td>2</td>
-                <td>2023, 2024 (men's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Charlotte Flair</th>
-                <td>2</td>
-                <td>2020, 2025 (women's)</td>
-              </tr>
-              <tr>
-                <th scope="row">Roman Reigns</th>
-                <td>2</td>
-                <td>2015, 2026 (men's)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
-    </section>
-
-    <section class="section-shell wwe-related" aria-labelledby="related-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">RELATED / WWE RECORDS</p><h2 id="related-title">Explore WWE</h2></div>
-        <p class="section-intro">Continue to the championship index or an event record.</p>
-      </div>
-      <ul class="resource-links" aria-label="Related WWE pages">
-        <li><a href="/wwe/championships/">WWE Championships <span aria-hidden="true">↗</span></a></li>
-        <li><a href="/wwe/events/wrestlemania-40.html">WrestleMania 40 <span aria-hidden="true">↗</span></a></li>
-      </ul>
+    <section class="section-shell wwe-hub" aria-label="WWE facts and navigation">
+      <article class="hub-answer"><p class="eyebrow">ORGANIZATION / OVERVIEW</p><h2>World Wrestling Entertainment Corporate Overview</h2><p><strong>WWE</strong> is a professional wrestling and sports entertainment company owned by TKO Group Holdings. Its weekly television brands include Monday Night Raw and Friday Night SmackDown. WWE produces live events, television programming, and digital content; distribution and brand schedules vary by market and season.</p></article>
+      <article class="hub-answer" id="wwe-directory"><p class="eyebrow">REFERENCE / DIRECTORY</p><h2>Semantic Navigation Directory</h2><ul class="resource-links" aria-label="WWE reference pages"><li><a href="/wwe/championships">WWE Championships &amp; Records <span aria-hidden="true">↗</span></a></li><li><a href="/wwe/roster">WWE Active Roster Directory <span aria-hidden="true">↗</span></a></li><li><a href="/wwe/ratings">WWE Historical TV Ratings &amp; Viewership <span aria-hidden="true">↗</span></a></li></ul></article>
+      <article class="hub-answer"><p class="eyebrow">REFERENCE / FAQ</p><h2>Frequently Asked Questions About WWE Information</h2><h3>How to watch WWE programming currently?</h3><p><strong>Netflix carries Raw and many WWE premium live events in most territories.</strong> Rights and included programming differ by country. WWE Network remains available in selected markets; Sony LIV serves India, and Flow carries WWE programming in parts of the Caribbean. Check the local service’s current schedule and event listing before subscribing.</p></article>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <a class="footer-mark" href="/">PW<span>/</span>REFERENCE</a>
-    <p>Independent professional wrestling reference.</p>
-    <span class="footer-region">UNITED STATES / EN</span>
-  </footer>
+  <footer class="site-footer"><a class="footer-mark" href="/">PW<span>·</span>DATA</a><p>Independent professional wrestling reference.</p><span class="footer-region">UNITED STATES / EN</span></footer>
 </body>
 </html>
